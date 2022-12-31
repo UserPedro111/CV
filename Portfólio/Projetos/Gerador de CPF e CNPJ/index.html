@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de CPF e CNPJ (by Pedro)</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+  <h1>Gerador de CPF E CNPJ</h1>
+  <form name="form_main">
+    <label for="numero">Número:</label> 
+    <input name="numero" id="numero" size="20" type="text" /><br />
+    Tipo:
+    <input name="tipo" value="cpf" id="cpf" checked="checked" type="radio"> 
+    <label for="cpf">CPF</label>
+    <input name="tipo" value="cnpj" id="cnpj" type="radio" /> 
+    <label for="cnpj">CNPJ</label>
+    <input name="mascara" value="mascara" id="mascara" type="checkbox"> 
+    <label for="mascara">Máscara</label><br /><br />
+    <input name="button" value="Gerar" onclick="gera()" type="button">
+  </form>
+</body>
+</html>
